@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
-        	checkout scm: [$class: 'GitSCM', source: 'git@github.com:dguymon/microservices.git', clean: true], poll: false
+        	steps {
+        	  checkout scm: [$class: 'GitSCM', source: 'git@github.com:dguymon/microservices.git', clean: true], poll: false    
+        	}
         }
         stage('Build') {
             steps {
