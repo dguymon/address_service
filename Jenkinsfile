@@ -21,12 +21,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building...'
+                sh 'mvn clean package -U -skipTests'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'mvn test'
+            }
+            post {
+                success {
+                    junit 'target/surefire-reports/**/*.xml'
+                }
             }
         }
         stage('Deploy') {
