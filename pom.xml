@@ -215,7 +215,7 @@
         <uniqueVersion>true</uniqueVersion>
         <id>maven-snapshots</id>
         <name>Maven Snapshots</name>
-        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-releases/</url>
+        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-snapshots/</url>
      </snapshotRepository>
   	 <site>
     	<id>sites</id>
