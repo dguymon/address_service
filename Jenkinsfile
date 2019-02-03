@@ -36,7 +36,11 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-               sh 'mvn deploy'
+               withMaven(
+                 mavenSettingsConfig: 'maven-settings-for-nexus'
+               ) {
+                   sh 'mvn deploy'    
+                 }
             }
         }
     }
