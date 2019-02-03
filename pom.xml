@@ -208,18 +208,18 @@
   	  <repository>
         <uniqueVersion>false</uniqueVersion>
         <id>maven-releases</id>
-        <name>Local Maven Releases</name>
-        <url>https://localhost:8445/nexus/repository/maven-releases</url>
+        <name>Maven Releases</name>
+        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-releases/</url>
      </repository>
      <snapshotRepository>
         <uniqueVersion>true</uniqueVersion>
         <id>maven-snapshots</id>
-        <name>Local Maven Snapshots</name>
-        <url>https://localhost:8445/nexus/repository/maven-snapshots</url>
+        <name>Maven Snapshots</name>
+        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-releases/</url>
      </snapshotRepository>
   	 <site>
     	<id>sites</id>
-    	<url>dav:https://localhost:8445/nexus/repository/sites/</url>
+    	<url>dav:http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/sites/</url>
   	 </site>
   </distributionManagement>
 </project>
