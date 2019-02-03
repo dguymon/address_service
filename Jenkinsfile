@@ -39,7 +39,7 @@ pipeline {
                withMaven(
                  mavenSettingsConfig: 'maven-settings-for-nexus'
                ) {
-                   sh 'mvn deploy:deploy'    
+                   sh 'mvn war:war deploy:deploy'    
                  }
             }
         }
