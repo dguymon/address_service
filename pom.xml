@@ -210,17 +210,17 @@
         <uniqueVersion>false</uniqueVersion>
         <id>maven-releases</id>
         <name>Maven Releases</name>
-        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-releases/</url>
+        <url>http://ec2-35-153-136-115.compute-1.amazonaws.com/repository/maven-releases/</url>
      </repository>
      <snapshotRepository>
         <uniqueVersion>true</uniqueVersion>
         <id>maven-snapshots</id>
         <name>Maven Snapshots</name>
-        <url>http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/maven-snapshots/</url>
+        <url>http://ec2-35-153-136-115.compute-1.amazonaws.com/repository/maven-snapshots/</url>
      </snapshotRepository>
   	 <site>
     	<id>sites</id>
-    	<url>dav:http://ec2-3-81-148-131.compute-1.amazonaws.com/repository/sites/</url>
+    	<url>dav:http://ec2-35-153-136-115.compute-1.amazonaws.com/repository/sites/</url>
   	 </site>
   </distributionManagement>
 </project>
